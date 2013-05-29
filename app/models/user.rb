@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   # TODO implement association for User model. See user_spec.rb for specification.
-  
+  validates :name, :presence => true
 
   # TODO Implement validation for User model. See user_spec.rb for specification.
   
