@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   validates :name, :presence => true
   attr_accessible :email
   validates :email, :uniqueness => true, :email => true
+  has_many :posts, :dependent => :destroy
 
   # TODO Implement validation for User model. See user_spec.rb for specification.
   
